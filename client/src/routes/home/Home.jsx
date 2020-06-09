@@ -1,10 +1,11 @@
 import React from 'react';
 import Nav from './components/Nav/Nav';
+import Hero from './components/Hero/Hero';
 
 const Home = () => {
     return <div>
            <Nav />
-            This is the home page
+            <Hero />
            </div>
 }
 

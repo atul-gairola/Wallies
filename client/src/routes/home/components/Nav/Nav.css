@@ -146,7 +146,7 @@ stroke: #fff;
 /* FOR DESKTOPS */
 @media only screen and (min-width: 820px){
     nav{
-        padding: 40px;
+        padding: 40px 60px;
         display: grid;
         grid-template-columns: 40% 35% 25%;
         grid-template-rows: none;
@@ -190,6 +190,9 @@ stroke: #fff;
     height: 32px;
     transition: 0.2s;
   } 
+  .nav-links svg:last-child{
+margin-right: 0;
+  }
 
   .nav-links svg:hover{
       transform: scale(1.2);
