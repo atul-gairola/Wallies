@@ -1,5 +1,5 @@
 import React from 'react';
-import Arrow from './images/hero-image.png';
+import HeroImage from './images/hero-image.png';
 import './Hero.css';
 
 const Hero = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
                  </button>
                 </div>
                 <div id='hero-image'>
-
+                <img src={HeroImage} />
                 </div>
                  
             </div>
