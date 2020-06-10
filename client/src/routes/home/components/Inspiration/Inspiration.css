@@ -1,0 +1,102 @@
+/* FOR MOBILE */
+.inspiration-container{
+    display: none;
+}
+
+
+/* FOR DESKTOPS*/
+@media only screen and (min-width: 500px){
+    .inspiration-container{
+        display: block;
+        padding: 0 60px;
+        height: 90vh;
+        width: 100%;
+    }
+    
+    .inspiration-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1.4fr;
+        grid-template-rows: 20vw 5vw 15vw;
+        grid-template-areas: "First Second Third"
+                             "Fourth Second Sixth"
+                             "Fourth Fifth Sixth";
+        grid-gap: 1.5vw;
+    }
+    
+    .inspiration-grid img{
+        width: 100%;
+    }
+    
+    .ins-photo{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .inspiration-photo-1{
+        grid-area: First;
+    }
+    .inspiration-photo-2{
+        grid-area: Second;
+    }
+    
+    .inspiration-photo-2 img{
+      width: 110%;
+    }
+    
+    .inspiration-photo-3{
+        grid-area: Third;
+        text-align: right;
+    }
+    
+    .inspiration-photo-3 h1{
+       font-size: 3.8vw;
+       color:#1A4A66;
+    }
+    
+    .inspiration-photo-3 p{
+        font-weight: bold;
+        color:#1A4A66;
+        font-size: 1.4vw;
+    }
+    
+    #p-last{
+        color:#9FC5D1;
+    }
+    
+    .inspiration-photo-3 button{
+        width: 60%;
+        height: 25%;
+        border-radius: 10px;
+        background: #1A4A66;
+        border: 2px solid #1A4A66;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        font-weight: bold;
+        margin-top: 4vw;
+        font-size: 1.4vw;
+        text-align: center;
+    }
+    
+    .inspiration-photo-3 button svg{
+        transform: rotate(-90deg);
+        fill: #fff;
+        position: relative;
+        top: 4px;
+        margin-left: 10px;
+        stroke: #fff;
+        width: 13px;
+    }
+    
+    .inspiration-photo-4{
+        grid-area: Fourth;
+    }
+    .inspiration-photo-5{
+        grid-area: Fifth;
+    }
+    .inspiration-photo-6{
+        grid-area: Sixth;
+    }
+}
+
